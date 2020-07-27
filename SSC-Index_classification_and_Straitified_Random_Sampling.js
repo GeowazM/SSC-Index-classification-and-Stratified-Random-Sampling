@@ -121,7 +121,7 @@ var ssc_low = ssc_l.map(sscClassLow);
 
 
 // b) Simplify (reclassify) climate zones
-var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 7, 8));
+var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 5, 8));
 var cf = ssc_low.filter(ee.Filter.rangeContains("klima", 9, 11));
 var cs = ssc_low.filter(ee.Filter.rangeContains("klima", 12, 14));
 var cw = ssc_low.filter(ee.Filter.rangeContains("klima", 15, 17));
@@ -198,7 +198,7 @@ var ssc_low = ssc_m.map(sscClassMedium);
 
 
 // simplify climate zone
-var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 7, 8));
+var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 5, 8));
 var cf = ssc_low.filter(ee.Filter.rangeContains("klima", 9, 11));
 var cs = ssc_low.filter(ee.Filter.rangeContains("klima", 12, 14));
 var cw = ssc_low.filter(ee.Filter.rangeContains("klima", 15, 17));
@@ -276,7 +276,7 @@ var ssc_low = ssc_h.map(sscClassHigh);                 //print('ssc low', ssc_lo
 
 
 // simplify climate zone
-var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 7, 8));
+var bw = ssc_low.filter(ee.Filter.rangeContains("klima", 5, 8));
 var cf = ssc_low.filter(ee.Filter.rangeContains("klima", 9, 11));
 var cs = ssc_low.filter(ee.Filter.rangeContains("klima", 12, 14));
 var cw = ssc_low.filter(ee.Filter.rangeContains("klima", 15, 17));
